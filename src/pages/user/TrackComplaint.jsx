@@ -24,7 +24,7 @@ import { useAuthStore } from '../../store/authStore';
 import toast from 'react-hot-toast';
 
 const TrackComplaint = () => {
-  const BASE_URL = "http://localhost:8080";
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const { user } = useAuthStore();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();

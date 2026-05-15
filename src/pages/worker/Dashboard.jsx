@@ -31,7 +31,7 @@ import { useAuthStore } from "../../store/authStore";
 import { authService } from "../../services/authService";
 
 import toast from "react-hot-toast";
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const WorkerDashboard = () => {
   const navigate = useNavigate();
   const location = useLocation();

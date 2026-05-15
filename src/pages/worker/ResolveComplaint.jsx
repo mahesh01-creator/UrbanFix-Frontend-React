@@ -36,7 +36,7 @@ import { useAuthStore } from "../../store/authStore";
 import { formatDate } from "../../utils/helpers";
 
 import toast from "react-hot-toast";
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const sidebarItems = [
   {

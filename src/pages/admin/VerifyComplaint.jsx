@@ -18,7 +18,7 @@ import Loader from "../../components/common/Loader";
 import toast from "react-hot-toast";
 import { complaintService } from "../../services/complaintService";
 import { formatDate } from "../../utils/helpers";
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const VerifyComplaint = () => {
   const [loading, setLoading] = useState(true);
 
